@@ -1,0 +1,105 @@
+/* Courses.css */
+.courses-section {
+    padding: 60px 20px;
+    background-color: #f9fafb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    /* min-height: 100vh; */
+    text-align: center;
+  }
+  
+  .courses-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: 1.2px;
+    color: #34495e;
+  }
+  
+  .courses-big-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #ffffff, #e6f0ff);
+    padding: 40px 30px;
+    border-radius: 25px;
+    box-shadow:
+      8px 8px 20px #c3d1f2,
+      -8px -8px 20px #ffffff;
+    
+    display: flex;
+    flex-wrap: wrap;       /* Allow cards to wrap */
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .courses-child-card {
+    background: white;
+    border-radius: 18px;
+    box-shadow:
+      0 4px 15px rgba(0, 0, 0, 0.07),
+      inset 0 0 8px #d9e9ff;
+    padding: 20px 25px;
+    width: 180px;       /* Smaller fixed width for horizontal alignment */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .courses-child-card:hover {
+    transform: translateY(-10px);
+    box-shadow:
+      0 12px 30px rgba(0, 0, 0, 0.15),
+      inset 0 0 12px #a3c0ff;
+  }
+  
+  .courses-category-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2a4365;
+    border-bottom: 3px solid #4299e1;
+    padding-bottom: 10px;
+  }
+  
+  .courses-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .courses-item {
+    margin-bottom: 14px;
+    color: #555555;
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: color 0.2s ease;
+  }
+  
+  .courses-item:hover {
+    color: #4299e1;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .courses-heading {
+      font-size: 2rem;       /* slightly smaller heading on smaller screens */
+      margin-bottom: 30px;   /* less bottom margin */
+    }
+  
+    .courses-big-card {
+      gap: 20px;             /* increase gap between child cards for breathing space */
+      padding: 30px 20px;    /* slightly reduce padding */
+      flex-direction: column; /* stack child cards vertically on small screens */
+      align-items: center;    /* center child cards horizontally */
+    }
+  
+    .courses-child-card {
+      width: 100%;           /* full width on mobile */
+      max-width: 300px;      /* limit max width for cards */
+      margin: 0 auto;        /* center horizontally */
+    }
+  }
+  

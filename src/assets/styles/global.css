@@ -1,0 +1,19 @@
+/* src/assets/styles/global.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  header,
+  .features,
+  .courses,
+  .inquiry-form,
+  .footer {
+    padding: 20px;
+    text-align: center;
+  }
+  
